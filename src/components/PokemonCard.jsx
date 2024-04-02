@@ -1,7 +1,10 @@
 import PropTypes from "prop-types";
 
 function PokemonCard(props) {
+
+
   const { pokemon } = props ;
+
   return (
     <section>
       <img src = {pokemon.imgSrc}/>
