@@ -1,12 +1,12 @@
 
-function NavBar ({pokemonList, handleClick}) {
+function NavBar ({pokemonList, handlePokemon}) {
 
     
    
     return (
       <>
           {pokemonList.map((article, index) => (
-             <button key={index} onClick={handleClick}>
+             <button key={index} onClick={() => handlePokemon(index)}>
             {article.name}
             </button>
           ))}
